@@ -99,5 +99,41 @@
 .question__button:hover {
   cursor: pointer;
   background: #e3e7ef;
+}
 
+@media screen and (max-width: 768px) {
+  .question__container_type_answer {
+    flex-direction: column;
+  }
+
+  .question__container_active {
+    max-height: 300px;
+  }
+
+  .question__button {
+    margin: 0;
+    margin-top: 50px;
+  }
+
+  .question__container_type_answer {
+    max-width: 90%;
+  }
+
+  .question__answer {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .question__container_type_answer {
+    max-width: 70%;
+  }
+
+  .question__container_type_answer {
+    padding-left: 60px;
+  }
+
+  .question__answer {
+    max-width: 100%;
+  }
 }
