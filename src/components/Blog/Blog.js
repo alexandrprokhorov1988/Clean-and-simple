@@ -15,10 +15,10 @@ function Blog() {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
 
-  React.useEffect(() => {
-    const timeout = setTimeout(nextSlide, 5000);
-    return () => clearTimeout(timeout);
-  }, [current]);
+  // React.useEffect(() => {
+  //   const timeout = setTimeout(nextSlide, 5000);
+  //   return () => clearTimeout(timeout);
+  // }, [current]);
 
   function handleClickBtn(e) {
     setCurrent(e.target.value - 1);
