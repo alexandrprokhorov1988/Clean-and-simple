@@ -7,12 +7,14 @@ import Stats from '../Stats/Stats';
 import Features from '../Features/Features';
 import Plan from '../Plan/Plan';
 import {QUESTIONS} from '../../utils/constants';
+import Customers from "../Customers/Customers";
 
 function App() {
   return (
     <div className="page">
       {/*<Header/>*/}
       <main className="content">
+        <Customers/>
         <Plan/>
         <Features/>
         <Stats/>

@@ -1,0 +1,70 @@
+.customers {
+  margin: 0 auto;
+  max-width: 888px;
+  width: calc(100% - 38.2%);
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.customers__list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: "bit watch face atlass audi";
+  justify-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.customers__list-item_type_bit {
+  grid-area: bit;
+}
+
+.customers__list-item_type_watch {
+  grid-area: watch;
+}
+
+.customers__list-item_type_face {
+  grid-area: face;
+}
+
+.customers__list-item_type_atlass {
+  grid-area: atlass;
+}
+
+.customers__list-item_type_audi {
+  grid-area: audi;
+}
+
+.customers__link {
+  cursor: pointer;
+}
+
+.customers__logo {
+  fill: #D6DAE5;
+  transition: all ease .5s;
+}
+
+.customers__link:hover .customers__logo {
+  fill: #5982E7;
+}
+
+@media screen and (max-width: 1280px) {
+  .customers {
+    width: 90%;
+  }
+
+  .customers__list {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "bit bit watch watch face face" "atlass atlass atlass audi audi audi";
+    grid-row-gap: 50px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .customers__list {
+    grid-template-columns: 1fr;
+    grid-template-areas: "bit" "watch" "face" "atlass" "audi";
+  }
+}
