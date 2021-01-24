@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Header from '../Header/Header';
 import Questions from '../Questions/Questions';
 import Quotes from '../Quotes/Quotes';
 import Blog from '../Blog/Blog';
@@ -12,7 +13,7 @@ import Customers from "../Customers/Customers";
 function App() {
   return (
     <div className="page">
-      {/*<Header/>*/}
+      <Header/>
       <main className="content">
         <Customers/>
         <Plan/>
