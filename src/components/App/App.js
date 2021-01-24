@@ -10,6 +10,7 @@ import Features from '../Features/Features';
 import Plan from '../Plan/Plan';
 import {QUESTIONS} from '../../utils/constants';
 import Customers from "../Customers/Customers";
+import Newsletter from "../Newsletter/Newsletter";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Questions
           questions={QUESTIONS}
         />
+        <Newsletter/>
         {/*<Footer/>*/}
       </main>
     </div>
