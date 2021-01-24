@@ -1,12 +1,13 @@
 import React from 'react';
-import './Header.css';
+import '../../components/Header/Header.css';
+import './Footer.css';
 import {Link, useLocation} from 'react-router-dom';
 
-function Header() {
+function Footer() {
   const location = useLocation();
 
   return (
-    <header className="header">
+    <header className="footer">
       <a href="/" className="logo"/>
       <nav className="nav">
         <ul className="nav__list">
@@ -49,8 +50,9 @@ function Header() {
         </ul>
       </nav>
       <button className="button">Get started</button>
+      <p className="footer__copyright">Copyright © 2018 by Random site</p>
     </header>
   )
 }
 
-export default Header;
+export default Footer;

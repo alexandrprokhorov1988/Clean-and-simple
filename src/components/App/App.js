@@ -11,6 +11,7 @@ import Plan from '../Plan/Plan';
 import {QUESTIONS} from '../../utils/constants';
 import Customers from "../Customers/Customers";
 import Newsletter from "../Newsletter/Newsletter";
+import Footer from "../Footer/Footer";
 
 function App() {
   return (
@@ -28,8 +29,8 @@ function App() {
           questions={QUESTIONS}
         />
         <Newsletter/>
-        {/*<Footer/>*/}
       </main>
+      <Footer/>
     </div>
   );
 }

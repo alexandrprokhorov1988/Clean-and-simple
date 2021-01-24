@@ -10,7 +10,7 @@
   grid-template-areas: "logo nav nav-social button";
 }
 
-.header__logo {
+.logo {
   width: 26px;
   height: 26px;
   border-radius: 50%;
@@ -18,14 +18,14 @@
   grid-area: logo;
 }
 
-.header__nav {
+.nav {
   max-width: 427px;
   width: 100%;
   padding-left: 73px;
   grid-area: nav;
 }
 
-.header__nav-list {
+.nav__list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -36,7 +36,7 @@
   width: 100%;
 }
 
-.header__nav-link {
+.nav__link {
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
@@ -48,15 +48,15 @@
   text-shadow: 0 0 5px #E6E6E6;
 }
 
-.header__nav-link:hover {
+.nav__link:hover {
   color: #869bc7;
 }
 
-.header__nav-link_active {
+.nav__link_active {
   color: #5E81FE;
 }
 
-.header__nav-social {
+.nav__social {
   max-width: 162px;
   height: 17px;
   width: 100%;
@@ -65,7 +65,7 @@
   grid-area: nav-social;
 }
 
-.header__nav-list-social {
+.nav__list-social {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -75,11 +75,7 @@
   align-items: center;
 }
 
-.header__nav-item-social {
-
-}
-
-.header__nav-link-social {
+.nav__link-social {
   display: block;
   width: 17px;
   height: 17px;
@@ -88,39 +84,39 @@
   background-size: contain;
 }
 
-.header__nav-link-social_type_face {
+.nav__link-social_type_face {
   background-image: url(../../images/header-icon-face.svg);
 }
 
-.header__nav-link-social_type_face:hover {
+.nav__link-social_type_face:hover {
   background-image: url(../../images/header-icon-face-hovered.svg);
 }
 
-.header__nav-link-social_type_telegram {
+.nav__link-social_type_telegram {
   background-image: url(../../images/header-telegram.svg);
 }
 
-.header__nav-link-social_type_telegram:hover {
+.nav__link-social_type_telegram:hover {
   background-image: url(../../images/header-telegram-hovered.svg);
 }
 
-.header__nav-link-social_type_twitter {
+.nav__link-social_type_twitter {
   background-image: url(../../images/header-twitter.svg);
 }
 
-.header__nav-link-social_type_twitter:hover {
+.nav__link-social_type_twitter:hover {
   background-image: url(../../images/header-twitter-hovered.svg);
 }
 
-.header__nav-link-social_type_mail {
+.nav__link-social_type_mail {
   background-image: url(../../images/header-mail.svg);
 }
 
-.header__nav-link-social_type_mail:hover {
+.nav__link-social_type_mail:hover {
   background-image: url(../../images/header-mail-hovered.svg);
 }
 
-.header__button {
+.button {
   width: 113px;
   height: 43px;
   background: #D2E1FF;
@@ -139,7 +135,7 @@
   grid-area: button;
 }
 
-.header__button:hover {
+.button:hover {
   background: #93a1bf;
 }
 
@@ -152,15 +148,15 @@
     grid-row-gap: 50px;
   }
 
-  .header__logo {
+  .logo {
     justify-self: start;
   }
 
-  .header__nav-social {
+  .nav__social {
     padding-right: 0;
   }
 
-  .header__button {
+  .button {
     justify-self: end;
   }
 }
@@ -174,24 +170,24 @@
     grid-row-gap: 50px;
   }
 
-  .header__nav {
+  .nav {
     padding: 0;
   }
 
-  .header__nav-list {
+  .nav__list {
     flex-direction: column;
   }
 
-  .header__nav-item:not(:first-of-type) {
+  .nav__item:not(:first-of-type) {
     padding-top: 20px;
   }
 
-  .header__nav-social {
+  .nav__social {
     padding-right: 0;
     justify-self: center;
   }
 
-  .header__button {
+  .button {
     justify-self: center;
   }
 }
