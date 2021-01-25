@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import {Route} from 'react-router-dom';
 import Header from '../Header/Header';
 import Hero from '../Hero/Hero';
 import Questions from '../Questions/Questions';
@@ -17,6 +18,7 @@ import Footer from "../Footer/Footer";
 function App() {
   return (
     <div className="page">
+      <Route exact path="*">
       <Header/>
       <main className="content">
         <Hero/>
@@ -33,6 +35,7 @@ function App() {
         <Newsletter/>
       </main>
       <Footer/>
+      </Route>
     </div>
   );
 }
