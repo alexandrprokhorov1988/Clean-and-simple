@@ -1,0 +1,82 @@
+.slide {
+  width: 423px;
+  position: relative;
+  height: 175px;
+  padding: 41px 71px 53px 69px;
+  background-color: #ffffff;
+  box-shadow: 0 5px 50px #e0e1e4;
+  box-sizing: border-box;
+  transition: all ease 1s;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.slide:last-of-type {
+  margin-left: 64px;
+}
+
+.slide_active {
+  opacity: 1;
+  transform: scale(1.08);
+  transition: all ease 1s;
+}
+
+.slide:after {
+  content: '';
+  position: absolute;
+  bottom: -31px;
+  left: calc(50% - 62px / 2);
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background-image: url(../../images/quotes-photo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slide__text {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #8D96BD;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  user-select: none;
+}
+
+.slide__text_active {
+  color: #676F95;
+  opacity: 1;
+}
+
+@media screen and (max-width: 1280px) {
+  .slide {
+    display: none;
+    height: auto;
+  }
+
+  .slide_active {
+    display: flex;
+  }
+
+  .slide:last-of-type {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slide {
+    max-width: 80%;
+    width: 80%;
+    padding: 5% 5% 45px 5%;
+  }
+}
